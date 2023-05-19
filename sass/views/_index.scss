@@ -1,7 +1,11 @@
+
+
 .body{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #262626;
+    text-align: center;
   
 
 
@@ -36,15 +40,59 @@
             padding: 3.75rem 0.625rem 8.125rem 2.5vw;
             font-size: 3vw;
             font-weight: bold;
+            text-align: start;
         }
 
+        &--titulo{
+            text-align: start;
+        }
+
+        &__create{
+            width: 98vw;
+            margin: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                width: 45vw;
+            }
+
+            p{
+                font-size: 1rem;
+            }
+            &--parrafo{
+                margin: 0 20px;
+                width: 25vw;
+                text-align: start;
+                font-weight: bold;
+
+                &--boton{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1em 0;
+                    width: 100%;
+                    border: 2px solid #fff;
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
         h1{
             font-size: 23vw;
+        }
+
+        h2{
+            font-size: 6.1vw;
         }
         
         &--fotoCentral{
             width: 95vw;
         }
+
         
+    
     }
 }
+
+

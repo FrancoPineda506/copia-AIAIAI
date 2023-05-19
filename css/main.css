@@ -1,8 +1,11 @@
 .header__container {
-  width: 100vw;
+  width: 98vw;
   display: flex;
+  position: fixed;
+  top: 0;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 .header__container__nav {
   margin: 10px 50px;
@@ -20,7 +23,9 @@
 .body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: #262626;
+  text-align: center;
 }
 .body__main {
   margin-top: 100px;
@@ -49,9 +54,45 @@
   padding: 3.75rem 0.625rem 8.125rem 2.5vw;
   font-size: 3vw;
   font-weight: bold;
+  text-align: start;
+}
+.body__main--titulo {
+  text-align: start;
+}
+.body__main__create {
+  width: 98vw;
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.body__main__create img {
+  width: 45vw;
+}
+.body__main__create p {
+  font-size: 1rem;
+}
+.body__main__create--parrafo {
+  margin: 0 20px;
+  width: 25vw;
+  text-align: start;
+  font-weight: bold;
+}
+.body__main__create--parrafo--boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  width: 100%;
+  border: 2px solid #fff;
+  text-decoration: none;
+  color: #fff;
 }
 .body__main h1 {
   font-size: 23vw;
+}
+.body__main h2 {
+  font-size: 6.1vw;
 }
 .body__main--fotoCentral {
   width: 95vw;

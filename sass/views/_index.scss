@@ -1,0 +1,50 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    background-color: #262626;
+  
+
+
+    
+    &__main{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    
+        &--barra{
+            width: 94vw;
+            height: 2px;
+            background-color: #fff;
+            margin-top: 10px;
+        }
+
+        &--music{
+            list-style: circle;
+            display: flex;
+            align-items: center;
+            width: 95vw;
+            
+            p{
+                margin: 0 5px;
+            }
+        }
+        
+        &--texto{
+            padding: 3.75rem 0.625rem 8.125rem 2.5vw;
+            font-size: 3vw;
+            font-weight: bold;
+        }
+
+        h1{
+            font-size: 23vw;
+        }
+        
+        &--fotoCentral{
+            width: 95vw;
+        }
+        
+    }
+}

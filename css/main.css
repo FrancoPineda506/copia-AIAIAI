@@ -1,0 +1,58 @@
+.header__container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__container__nav {
+  margin: 10px 50px;
+}
+.header__container__nav--logo {
+  width: 45px;
+  border-radius: 50%;
+}
+.header__container a {
+  text-decoration: none;
+  color: #FFFFFF;
+  margin: 0 10px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  background-color: #262626;
+}
+.body__main {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.body__main--barra {
+  width: 94vw;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.body__main--music {
+  list-style: circle;
+  display: flex;
+  align-items: center;
+  width: 95vw;
+}
+.body__main--music p {
+  margin: 0 5px;
+}
+.body__main--texto {
+  padding: 3.75rem 0.625rem 8.125rem 2.5vw;
+  font-size: 3vw;
+  font-weight: bold;
+}
+.body__main h1 {
+  font-size: 23vw;
+}
+.body__main--fotoCentral {
+  width: 95vw;
+}

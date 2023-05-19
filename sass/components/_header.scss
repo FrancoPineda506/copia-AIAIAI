@@ -1,0 +1,28 @@
+.header{
+
+    &__container{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+        &__nav{
+            margin: 10px 50px;
+            
+            &--logo{
+                
+                width: 45px;
+                border-radius: 50%;
+                
+            }
+        }
+
+        
+        a{
+            text-decoration: none;
+            color: #FFFFFF;
+            margin: 0 10px;
+        }
+    }
+}

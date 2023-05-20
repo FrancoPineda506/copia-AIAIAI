@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "BPmono";
+    src: url(../../assets/tff/BPmono.ttf);
+    font-style: normal;  
+}
+  
+@font-face {
+    font-family: "BPmono";
+    src: url(../../assets/tff/BPmonoBold.ttf);
+    font-style: bold;
+}
+
+
+@mixin barra($color){
+
+    width: 94vw;
+    height: 2px;
+    background-color: $color;
+    margin-top: 10px;
+
+}
+
+@mixin displayFlex( $direction , $justify , $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+
+}
+
+@mixin colorBox( $letra , $fondo){
+
+    color: $letra;
+    background-color: $fondo;
+
+}
+
+@mixin Positions($position , $left , $top){
+    position: $position;
+    left: $left;
+    top: $top;
+}
+
+@mixin boton($color, $borde){
+    @include displayFlex(row , center,center);
+    color: $color;
+    border: 2px solid $borde;
+    padding: 1px 6px;
+    width: 100%;
+    height: 3.5rem;
+
+    &:hover{
+        background-color: #fff;
+    }
+}
+
+.resaltado{
+    color: #CBFF0F ;
+}
+
+p{
+    margin-bottom: 0;
+}    

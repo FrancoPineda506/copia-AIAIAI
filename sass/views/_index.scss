@@ -1,97 +1,128 @@
-
+*{
+    padding: 0;
+    margin: 0;
+}
 
 .body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 0;
+    margin: 0;
+    @include displayFlex(column , center, center);
+    
     background-color: #262626;
-    text-align: center;
+    
   
-
-
-    
     &__main{
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-    
-        &--barra{
-            width: 94vw;
-            height: 2px;
-            background-color: #fff;
-            margin-top: 10px;
-        }
-
-        &--music{
-            list-style: circle;
-            display: flex;
-            align-items: center;
-            width: 95vw;
-            
-            p{
-                margin: 0 5px;
-            }
-        }
+        width: 100%;
+        @include displayFlex(column ,center, center);
         
-        &--texto{
-            padding: 3.75rem 0.625rem 8.125rem 2.5vw;
-            font-size: 3vw;
-            font-weight: bold;
-            text-align: start;
-        }
 
-        &--titulo{
-            text-align: start;
-        }
+        &__box{
+            width: 100%;
 
-        &__create{
-            width: 98vw;
-            margin: 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            img{
-                width: 45vw;
+            &__Negra{
+
+                margin-top: 100px;
+                @include colorBox(#fff , #262626);
+                @include displayFlex(column ,center, center);
+
+                &--subtittle{
+                    width: 94vw;
+                    @include displayFlex(row ,start,center);
+                    
+                                   
+                }
+
+                &--barraBlanca{
+                    @include barra(#fff)
+                }
+
+                &--barraGris{
+                    @include barra(#5E5E5E)
+                }
+
+                &--barraGris2{
+                    @include barra(#A0A0A0)
+                }
+                
+                &--fotoCentral{
+                    width: 94vw;
+                }
+                
+                &--texto{
+                    width: 94vw;
+                    padding: 3.75rem 0.625rem 8.125rem;
+                    font-size: 3vw;
+                    font-weight: bold;
+                }
+
+                h1{
+                    font-family: "BPmono" , 'Times New Roman', Times, serif;
+                    padding: 0;
+                    font-size: 23vw;
+                }
+
+                h2{
+                    font-size: 6.1vw;
+                }
+            
+                &__create{
+                    margin-top: 40px;
+                    width: 94vw;
+                    @include displayFlex(row , space-between,center);
+
+                    &--texto{
+                        @include displayFlex(column , start,center);
+                        width: 25%;
+                        font-weight: bold;
+
+                        &--boton{
+                            @include boton(#fff , #fff);
+                        }
+                    }
+
+                    &--img{
+                        width: 50%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                }
+            
             }
 
-            p{
-                font-size: 1rem;
-            }
-            &--parrafo{
-                margin: 0 20px;
-                width: 25vw;
-                text-align: start;
-                font-weight: bold;
+            &__Blanca{
+               
+                padding-top: 200px;
+                @include colorBox(#262626 , #fff);
+                @include displayFlex(column , center,center);
 
-                &--boton{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 1em 0;
-                    width: 100%;
-                    border: 2px solid #fff;
-                    text-decoration: none;
-                    color: #fff;
+                &__products{
+                    @include displayFlex(row,space-around,start);
+                    &__card{
+                        margin-top: 50px;
+                        @include displayFlex(column , space-around ,center);
+                        width: 32vw;
+                        a{
+
+                            width: 100%;
+                            img{
+                                background-color: #ECECEC;
+                                width: 94%;
+                            }
+                        }
+
+                        &--boton{
+                            @include boton(#262626 , #262626);
+                        }
+                    }
+                }
+
+                &--barraNegra{
+                    @include barra(#262626);
                 }
             }
         }
-        h1{
-            font-size: 23vw;
-        }
-
-        h2{
-            font-size: 6.1vw;
-        }
-        
-        &--fotoCentral{
-            width: 95vw;
-        }
-
-        
-    
     }
 }
 

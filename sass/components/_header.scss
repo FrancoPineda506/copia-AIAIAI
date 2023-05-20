@@ -3,31 +3,63 @@
     
     
     &__container{
-        width: 98vw;
-        display: flex;
-        position: fixed;
-        top: 0;
-        justify-content: space-between;
-        align-items: center;
-        overflow: hidden;
-        
+
+        width: 100%;
+
+        @include displayFlex(row , space-between,center);
+        @include Positions(fixed, 0 , 0);
+
+        background-color: #262626;
+
+        transition: background .5s;
         
         &__nav{
+            @include displayFlex(row , center ,center);
             margin: 10px 50px;
             
-            &--logo{
+            &--logoB {
                 
                 width: 45px;
                 border-radius: 50%;
                 
             }
+
+            &--logoN{
+                
+                width: 45px;
+                border-radius: 50%;
+                display: none;
+            }
         }
 
-        
-        a{
-            text-decoration: none;
-            color: #FFFFFF;
-            margin: 0 10px;
+        &:hover{
+
+            background-color: #FFFFFF;
+
+            .header__container__nav--logoB{
+                
+                display: none;
+            }
+            .header__container__nav--logoN{
+                display: flex;
+                
+            }
+            a{
+                
+                color: #262626;
+                
+            }
         }
+    }
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0 10px;
+    font-weight: bold;
+
+    &:hover{
+        text-decoration: underline;
     }
 }
